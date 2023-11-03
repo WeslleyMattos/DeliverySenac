@@ -31,6 +31,7 @@
   --fontDestaque: "Aller-Bold", "Rubik", sans-serif;
 }
 
+/* Set the fonts for the body of the page and the background image */
 body {
   font-family: "Aller", sans-serif;
   background-image: url(https://s1.1zoom.me/big0/485/Cats_Dogs_Colored_background_Lying_down_Poodle_572003_1280x853.jpg);
@@ -39,7 +40,7 @@ body {
 }
 
 
-/* header */
+/* Begin of header/NavBar formatting */
 
 .header {
     background-color: var(--color-background);
@@ -47,11 +48,13 @@ body {
     box-shadow: 1px 1px 1px var(--color-black);
 }
 
+/* Set the font of the logo text */
 #pet, #go,
 #place {
   font-family: var(--fontPadrao);
 }
 
+/* Configure the formatting for the "Go" */
 .navbar #go {
     color: var(--color-white);
     text-align: center;
@@ -65,6 +68,7 @@ body {
     text-transform: uppercase;
   }
 
+/* Configure the formatting for the "Pet" */
 .navbar #pet {
     color: var(--color-text-out);
     text-align: center;
@@ -78,6 +82,7 @@ body {
     text-transform: uppercase;
   }
 
+/* Configure the formatting for the "Place" */
 .navbar #place {
   color: var(--color-white);
   font-family: "Aller", sans-serif;
@@ -89,17 +94,33 @@ body {
   text-transform: uppercase;
 }
 
-
+/* Add a hover effect with text highlighting and underline in the contents of the navbar */
 .navbar-nav .nav-link:hover {
   text-decoration: underline;
   background-color: var(--color-text-out);
 }
 
+/* Set the font size and color of the NavBar contents */
 .header .nav-item {
   font-size: large;
   color: var(--color-white);
 }
 
+/* Set the navbar toggler button to have a border with color */
+.navbar-toggler {
+   color: rgba(255,255,255,.5);
+   border-color: rgba(255,255,255,.1);
+}
+
+/* Set the icon of the NavBar toggler icon manually */
+/* NOTE: This is done because the "navbar-dark" class was removed from the HTML and it was responsible for doing it automatically, but besides that it 
+ *also changed other properties that where of no interest to us. This is the reason why it was removed. So, to keep the looks consistent the colapsed 
+ * icon is set manually. */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* End of header/NavBar formatting */
 
 
 /* Home text formatting */
@@ -111,6 +132,7 @@ body {
   text-align: center;
 }
 
+/* Set the color of the buttons to be white */
 .btn {
   color: var(--color-white);
 }

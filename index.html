@@ -31,7 +31,10 @@
 
     <!-- Navbar -->
     <section class="header">
-      <nav class="navbar navbar-expand-lg">
+      <!-- NOTE: Previously here was the class "navbar-dark" and it added the colapsed NavBar icon, but since it was removed is had to be manually added 
+      back in the CSS.
+      The class was removed because it added visual features that where of no interest to us. -->
+      <nav class="navbar navbar-expand-lg" >
         <table class="active">
           <tr>
             <td id="go"> GO</td>
@@ -57,17 +60,13 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
             <!-- This line is used to add a hover and selected behavior to the elements of the NavBar -->
-            <a class="nav-item nav-link active" href="#"
-              ><span class="sr-only"></span
-            ></a>
+            <a class="nav-item nav-link active" href="#"><span class="sr-only"></span></a>
 
             <!-- NavBar elements -->
             <a class="nav-item nav-link" href="#">Sobre</a>
             <a class="nav-item nav-link" href="#">Seja um Pet Sitter</a>
             <a class="nav-item nav-link" href="#">Registrar</a>
-            <a class="nav-item nav-link" href="#"
-              >Login &nbsp;<i class="fas fa-sign-in-alt"></i
-            ></a>
+            <a class="nav-item nav-link" href="#">Login &nbsp;<i class="fas fa-sign-in-alt"></i></a>
           </div>
         </div>
       </nav>
@@ -82,10 +81,9 @@
           <p style="font-size: 3em">Busque Um Pet Sitter</p>
           <p style="font-size: 2em">E garanta o bem-estar do seu Pet!</p>
 
+          <!-- The two main button in the home page -->
           <button type="button-home" class="btn btn-info btn-lg">Buscar</button>
-          <button type="button-home" class="btn btn-outline-info btn-lg">
-            O que é um Pet Sitter?
-          </button>
+          <button type="button-home" class="btn btn-outline-info btn-lg"> O que é um Pet Sitter? </button>
         </div>
       </div>
     </section>
