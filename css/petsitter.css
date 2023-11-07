@@ -173,6 +173,7 @@ a {
     margin:auto;
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
 }
 
 .image-fundo {
@@ -241,29 +242,7 @@ h2 {
     text-transform: uppercase;
 }
 
-#gato {
-    width: 100px;
-    height: 90px;
-    background-color: #820263;
-    border-radius: 10px;
-
-}
-
-#cachorro {
-    width: 100px;
-    height: 90px;
-    background-color: #820263;
-    border-radius: 10px;
-}
-
-#rato {
-    width: 100px;
-    height: 90px;
-    background-color: #820263;
-    border-radius: 10px;
-}
-
-#cobra {
+.animal {
     width: 100px;
     height: 90px;
     background-color: #820263;
@@ -283,7 +262,7 @@ h2 {
     font-weight: bold;
 }
 
-.texto-sobre {
+#texto-sobre {
     text-align: left;
     margin-top: 15px;
 }
@@ -301,11 +280,80 @@ h2 {
 
 #botoes-perfil{
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 0px;
+    height: 20vh;
 }
 
 #duvidas-perfil{
-    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8vh;
     font-size: 25px;
+    margin-right: -5vw;
+}
+
+/* This is a big flex conteiner for the header (it includes the text of the left and the buttons of the rigth)*/
+#header-txt{
+    margin-top: 30vh;
+    height: 15vh;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 65vw;
+    margin-right: 15vw;
+}
+
+#detalhes-conteudo{
+    display: flex;
+    flex-direction: row;
+}
+
+#animais{
+     display:grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;   
+}
+
+@media only screen and (max-width:1020px) {
+    #header-txt{
+        height: 30vh;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    /*h1{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 18px;
+    }*/
+
+    #detalhes-conteudo{
+        flex-direction: column;
+        margin-bottom: 10vh;
+    }
+
+    #sobre{
+        margin-top: 10vh;
+        width:70vw;
+       margin-left: 5vw;
+    }
+
+    #botoes-perfil{
+        heigth:10%;
+        flex-direction: row;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    #animais{
+        grid-template-columns: 1fr 1fr ;   
+   }
 }
