@@ -148,6 +148,10 @@ body {
   background-color: var(--color-text-out);
 }
 
+.btn a{
+  color: var(--color-white);
+}
+
 .btn:hover {
   color: var(--color-white);
   background-color: var(--color-background);
