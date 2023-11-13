@@ -366,6 +366,7 @@ footer {
     position: relative;
     margin-bottom: -2%;
     left: 0;
+    text-align: center;
 }
 
 .footerHome {
@@ -395,6 +396,7 @@ h1,
     line-height: 36px;
     letter-spacing: 1.25px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 #pet {
@@ -437,6 +439,7 @@ h1,
     .container.sign-up-mode2 form.sign-up-form {
         display: flex;
         opacity: 1;
+        
     }
     .container.sign-up-mode2 form.sign-in-form {
         display: none;
@@ -454,16 +457,15 @@ h1,
     }
 
     #sign-up-btn2{
-        color: black;
+        color: rgb(243, 229, 229);
+        text-align: center;
     }
-
     
 }
-@media (max-width:320px) {
+@media (max-width:380px) {
     form {
-        width: 90%;
+        width: 80%;
     }
-}
 
 
 .btn {
@@ -484,4 +486,5 @@ h1,
     color: white;
     text-decoration: underline;
     transition: 0.3s;
+}
 }
