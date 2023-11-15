@@ -14,6 +14,7 @@
     --color-text: #4f4f4f;
     --color-text-out: #90908e;
     --color-primary: #ffbf00;
+    --color-primary-out: #ffda6f;
     --color-secondary: #fff2cc;
     --color-white: #ffffff;
     --color-red: #e74c3c;
@@ -21,7 +22,6 @@
     --color-separate: #cccccc;
     --color-input-out: #ececec;
 }
-
 
 html, body {
     font-family: 'PoppinsRegular', 'Rubik', sans-serif;
@@ -34,7 +34,6 @@ b {
     font-family: 'PoppinsMedium', 'Rubik', sans-serif;
 }
 
-/* background top */
 .bg-top {
     position: absolute;
     top: 0px;
@@ -58,11 +57,9 @@ b {
     border: none !important;
 }
 
-
-/* logo */
 .container-img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background-image: url('../img/logo.png');
     background-size: cover;
     background-position: center;
@@ -71,8 +68,6 @@ b {
     border-radius: 20px;
 }
 
-
-/* cabeçalho */
 .infos {
     flex: 1;
     display: flex;
@@ -108,8 +103,6 @@ b {
     color: var(--color-primary) !important;
 }
 
-
-/* menu */
 section.categoria {
     position: sticky;
     top: 0;
@@ -140,15 +133,62 @@ section.categoria {
     border-radius: 20px;
     padding: 15px 25px;
     font-size: 20px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
-}
-
-.btn-white:hover, .btn-white.active {
-    color: var(--color-primary);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .btn-sm {
-    padding: 8px 13px;
-    border-radius: 15px;
-    font-size: 16px;
+   padding: 8px 13px;
+   border-radius: 15px;
+   font-size: 16px;
 }
+
+.btn-white:hover, .btn-white.active {
+    background-color: var(--color-primary);
+}
+
+.title-categoria {
+    color: var(--color-black);
+    margin-left: 5px;
+}
+
+.container-group .card {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.container-img-produto {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-secondary);
+    border-radius: 15px;
+    margin-right: 20px;
+    flex: none;
+}
+
+.infos-produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infos-produto .name {
+    font-size: 18px;
+    color: var(--color-black);
+    margin-bottom: 0px;
+}
+
+.infos-produto .description {
+    font-size: 14px;
+    color: var(--color-text);
+    margin-bottom: 5px;
+}
+
+.infos-produto .price {
+    font-size: 16px;
+    color: var(--color-primary);
+    margin-bottom: 0px;
+}
+
+
