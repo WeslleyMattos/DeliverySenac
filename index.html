@@ -13,8 +13,10 @@
 </head>
 <body>
 
+    <!-- background topo -->
     <div class="bg-top"></div>
 
+    <!-- header -->
     <header class="width-fix mt-5">
 
         <div class="card">
@@ -29,7 +31,7 @@
                         <p class="status-open">
                             <i class="fa fa-clock"></i> Aberta
                         </p>
-                        <a href="#" class="link">
+                        <a href="./sobre.html" class="link">
                             ver mais
                         </a>
                     </div>
@@ -43,6 +45,7 @@
 
     </header>
 
+    <!-- menu -->
     <section class="categoria width-fix mt-4">
         <div class="container-menu" id="listaCategorias">
 
@@ -96,6 +99,27 @@
 
     </section>
 
+    <!-- menu bottom -->
+    <section class="menu-bottom" id="menu-bottom">
+        <a class="menu-bottom-item active">
+            <i class="fas fa-book-open"></i>&nbsp; Cardápio
+        </a>
+
+        <a class="menu-bottom-item">
+            <i class="fas fa-utensils"></i>&nbsp; Pedido
+        </a>
+
+        <a href="./carrinho.html" class="menu-bottom-item">
+            <span class="badge-total-carrinho">2</span>
+            <!-- <i class="fas fa-shopping-cart"></i> -->
+            Carrinho
+        </a>
+    </section>
+
+    <!-- menu bottom quando a loja estiver fechada -->
+    <section class="menu-bottom disable hidden id="menu-bottom-closed">
+        <p class="mb-0"><b>Loja fechada no momento.</b></p>
+    </section>
 
     <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="./js/cardapio.js"></script>

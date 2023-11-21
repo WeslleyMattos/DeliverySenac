@@ -1,3 +1,4 @@
+/* variaveis globais */
 @font-face {
     font-family: 'PoppinsMedium';
     src: url('../fonts/Poppins-Medium.otf');
@@ -35,14 +36,17 @@ b {
     font-family: 'PoppinsMedium', 'Rubik', sans-serif;
 }
 
+/* utilizada para esconder elementos */
 .hidden {
     display: none!important;
 }
 
+/* classe de padding right usada em pedidos.html */
 .pr-0 {
     padding-right: 0px!important;
 }
 
+/* background color do top index */
 .bg-top {
     position: absolute;
     top: 0px;
@@ -52,12 +56,14 @@ b {
     background-color: var(--color-secondary);
 }
 
+/* pra deixar o conteudo do site centralizado */
 .width-fix {
     width: calc(100% - 20px);
     max-width: 800px;
     margin: 0px auto;
 }
 
+/* card cardapio */
 .card {
     border-radius: 20px;
     padding: 15px 20px;
@@ -66,6 +72,7 @@ b {
     border: none !important;
 }
 
+/* container da imagem do card */
 .container-img {
     width: 60px;
     height: 60px;
@@ -77,6 +84,7 @@ b {
     border-radius: 20px;
 }
 
+/* descrição dos produtos */
 .infos {
     flex: 1;
     display: flex;
@@ -96,6 +104,7 @@ b {
     align-items: center;
 }
 
+/* status se ta aberto ou fechada a loja */
 .status-open {
     font-size: 14px;
     margin-bottom: 0px;
@@ -106,12 +115,14 @@ b {
     color: var(--color-red);
 }
 
+/* link que leva pra descrição da loja */
 .link {
     text-decoration: none !important;
     font-size: 14px;
     color: var(--color-primary) !important;
 }
 
+/* categoria do menu, modo sticky */
 section.categoria {
     position: sticky;
     top: 0;
@@ -136,6 +147,7 @@ section.categoria {
     flex: none;
 }
 
+/* botoes */
 .btn-white {
     color: var(--color-black);
     background-color: var(--color-white);
@@ -165,6 +177,7 @@ section.categoria {
     background-color: var(--color-primary);
 }
 
+/* titulo da categoria */
 .title-categoria {
     color: var(--color-black);
     margin-left: 5px;
@@ -210,6 +223,8 @@ section.categoria {
     margin-bottom: 0px;
 }
 
+
+/* menu inferior */
 .menu-bottom {
     position: fixed;
     right: 0;
@@ -266,12 +281,12 @@ section.categoria {
     font-size: 18px;
 }
 
-/* Detalhes do produto */
-
+/* Detalhes do produto -- ITEM.HTML*/
 .bg-top.details {
     height: 410px;
 }
 
+/* Voltar */
 .container-voltar {
     width: 30px;
     height: 30px;
@@ -283,6 +298,7 @@ section.categoria {
     color: var(--color-black)!important;
 }
 
+/* imagem do card */
 .container-imagem-produto {
     height: 240px;
     width: 100%;
@@ -294,6 +310,7 @@ section.categoria {
     margin-bottom: 10px;
 }
 
+/* titulo da categoria */
 .sub-title-categoria {
     color: var(--color-text);
     margin-left: 5px;
@@ -325,6 +342,7 @@ section.categoria {
     margin-top: 5px;
 }
 
+/* css dos checkbox */
 .checks {
     margin-left: 10px;
 }
@@ -389,6 +407,7 @@ section.categoria {
     border-width: 0 3px 3px 0;
 }
 
+/* caixa de observações do pedido */
 .form-control {
     background-color: var(--color-white);
     color: var(--color-black)!important;
@@ -404,6 +423,8 @@ textarea {
     height: 150px!important;
 }
 
+
+/* menu bottom adicionais */
 .menu-bottom.details {
     justify-content: space-between;
     padding: 8px 15px;
@@ -431,6 +452,7 @@ textarea {
     padding: 2px 15px;
     font-size: 18px;
 }
+
 
 /* Sobre a empresa */
 
