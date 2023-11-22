@@ -1,3 +1,5 @@
+/* Login */
+
 .login {
     width: calc(100% - 20px);
     max-width: 450px;
@@ -63,8 +65,8 @@
 .menu-item {
     display: block;
     padding: 15px 30px;
-    color: var(--color-black)!important;
-    text-decoration: none!important;
+    color: var(--color-black) !important;
+    text-decoration: none !important;
 }
 
 .menu-item i {
@@ -155,7 +157,8 @@ h1.title-page {
     opacity: 0.5;
 }
 
-.menus-pedido a.active, .menus-pedido a:hover {
+.menus-pedido a.active,
+.menus-pedido a:hover {
     opacity: 1;
 }
 
@@ -169,28 +172,29 @@ h1.title-page {
     margin-left: 5px;
 }
 
-.numero-pedido{
+.numero-pedido {
     font-size: 16px;
 }
 
-.card-pedido .dropdown{
+.card-pedido .dropdown {
     float: right;
 }
 
-.info-pedido{
+
+.info-pedido {
     font-size: 16px;
     margin-bottom: 10px;
-    color: var(--color-black)
+    color: var(--color-black);
 }
 
-.info-pedido i{
+.info-pedido i {
     width: 25px;
     text-align: center;
 }
 
-.info-pedido span{
+.info-pedido span {
     display: block;
-    color: text;
+    color: var(--color-text);
     font-size: 14px;
 }
 
@@ -198,92 +202,91 @@ h1.title-page {
     height: 1px;
     background-color: var(--color-text-out);
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-.horario-pedido{
+.horario-pedido {
     margin-bottom: 0px;
     font-size: 14px;
 }
 
-.total-pedido{
+.total-pedido {
     text-align: right;
     margin-bottom: 0px;
     margin-top: 15px;
     color: var(--color-primary);
 }
 
-.card-pedido{
-    box-shadow: 1px 0px 15px 3px rgba(0, 0, 0, 0.1)!important;
+.card-pedido {
+    box-shadow: 1px 0px 15px 3px rgba(0, 0, 0, 0.1) !important;
     border-radius: 0px;
 }
 
-.card-pedido::before{
-    content: "";
+.card-pedido::before {
+    content: '';
     position: absolute;
     left: 0;
     height: 10px;
     width: 100%;
     top: -7px;
-    background: radial-gradient(circle,transparent,transparent 50%, #ffffff 50%, #ffffff 100%) -7px -8px / 16px 16px repeat-x;
+    background: radial-gradient(circle, transparent, transparent 50%, #ffffff 50%, #ffffff 100%) -7px -8px / 16px 16px repeat-x;
 }
 
-.card-pedido::after{
-    content: "";
+.card-pedido::after {
+    content: '';
     position: absolute;
     left: 0;
     height: 10px;
     width: 100%;
     bottom: -7px;
-    background: radial-gradient(circle,transparent,transparent 50%, #ffffff 50%, #ffffff 100%) -15px 2px / 16px 16px repeat-x;
+    background: radial-gradient(circle, transparent, transparent 50%, #ffffff 50%, #ffffff 100%) -15px 2px / 16px 16px repeat-x;
 }
 
-.card-pedido:hover{
+.card-pedido:hover {
     background-color: var(--color-secondary);
 }
 
-.card-pedido:hover::before, .card-pedido:hover::after{
-    background: radial-gradient(circle,transparent,transparent 50%, var(--color-secondary) 50%, var(--color-secondary) 100%) -7px -8px / 16px 16px repeat-x;
+.card-pedido:hover::before, .card-pedido:hover::after {
+    background-image: radial-gradient(circle, transparent, transparent 50%, var(--color-secondary) 50%, var(--color-secondary) 100%);
 }
 
-.card-content{
+.card-content {
     cursor: pointer;
 }
 
-.card-pedido-body{
+.card-pedido-body {
     height: 140px;
 }
 
-/* Modal - Detalhes */
+/* Modal detalhes */
 
-.modal-content{
+.modal-content {
     background: transparent;
-    border:none
+    border: none;
 }
 
-.modal-header{
+.modal-header {
     border-bottom: 0;
     background-color: var(--color-background);
-    border-radius: 0;
+    border-radius: 0px;
 }
 
-.modal-header::before{
-    content: "";
+.modal-header::before {
+    content: '';
     position: absolute;
     left: 0;
     height: 10px;
     width: 100%;
     top: -8px;
-    background: radial-gradient(circle,transparent,transparent 50%, var(--color-background) 50%, var(--color-background) 100%) -7px -8px / 16px 16px repeat-x;
+    background: radial-gradient(circle, transparent, transparent 50%, var(--color-background) 50%, var(--color-background) 100%) -7px -8px / 16px 16px repeat-x;
 }
 
-.modal-title{
+.modal-title {
     font-size: 18px;
     color: var(--color-black);
-
 }
 
-.modal-title .horario-pedido{
+.modal-title .horario-pedido {
     font-size: 14px;
     color: var(--color-text);
     padding-left: 15px;
@@ -304,7 +307,7 @@ h1.title-page {
 }
 
 .cursor-default {
-    cursor: default;
+    cursor: default!important;
 }
 
 .container-dados-pedido .info-pedido {
@@ -312,37 +315,36 @@ h1.title-page {
     color: var(--color-text);
 }
 
-.container-itens-pedido{
+.container-itens-pedido {
     padding: 20px;
     background-color: var(--color-white);
 }
 
-.container-itens-pedido .card-item{
+.container-itens-pedido .card-item {
     padding: 5px 0px 10px 0px;
     border-bottom: 1px dashed #cdcdcd;
 }
 
-.container-itens-pedido .card-item:last-child{
+.container-itens-pedido .card-item:last-child {
     border: none;
 }
 
-.container-itens-pedido::after{
-    content: "";
+.container-itens-pedido::after {
+    content: '';
     position: absolute;
     left: 0;
     height: 10px;
     width: 100%;
     margin-top: 17px;
-    background: radial-gradient(circle,transparent,transparent 50%, #ffffff 50%, #ffffff 100%) -15px 2px / 16px 16px repeat-x;
+    background: radial-gradient(circle, transparent, transparent 50%, #ffffff 50%, #ffffff 100%) -15px 2px / 16px 16px repeat-x;
 }
 
-.footer-btn{
+.footer-btn {
     display: flex;
     justify-content: end;
 }
 
 /* Cardápio */
-
 
 .card-drag {
     display: flex;
@@ -394,16 +396,16 @@ h1.title-page {
     box-shadow: var(--box-shadow);
 }
 
-.icon-action:hover{
+.icon-action:hover {
     background-color: var(--color-secondary);
 }
 
-.title-produtos{
+.title-produtos {
     font-size: 14px;
     color: var(--color-black);
 }
 
-.drag-icon-produto{
+.drag-icon-produto {
     display: flex;
     width: 35px;
     justify-content: center;
@@ -412,17 +414,17 @@ h1.title-page {
     cursor: grab;
 }
 
-.lista-produtos .container-img-produto{
+.lista-produtos .container-img-produto {
     display: flex;
     justify-content: end;
     align-items: end;
 }
 
-.lista-produtos .infos-produtos{
+.lista-produtos .infos-produto {
     flex: 1;
 }
 
-.badge-adicionais{
+.badge-adicionais {
     position: absolute;
     top: 6px;
     margin-left: 19px;
@@ -437,31 +439,30 @@ h1.title-page {
     align-items: center;
 }
 
-/* Delivery e retirada */
+/* Delivery e Retirada */
 
-
-.menus-config i{
+.menus-config i {
     margin-right: 5px;
 }
 
-.menus-config a{
+.menus-config a {
     margin-right: 10px;
 }
 
-.switch{
+.switch {
     position: relative;
     display: inline-block;
     width: 50px;
     height: 25px;
 }
 
-.switch input{
-    width: 0;
+.switch input {
     opacity: 0;
+    width: 0;
     height: 0;
 }
 
-.slider{
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -473,7 +474,7 @@ h1.title-page {
     -webkit-transition: .4s;
 }
 
-.slider:before{
+.slider::before {
     content: "";
     position: absolute;
     height: 17px;
@@ -485,58 +486,57 @@ h1.title-page {
     -webkit-transition: .4s;
 }
 
-input:checked + .slider{
+input:checked + .slider {
     background-color: var(--color-primary);
 }
 
-input:focus + .slider{
+input:focus + .slider {
     box-shadow: 0 0 1px var(--color-primary);
 }
 
-input:checked + .slider::before{
+input:checked + .slider::before {
     transform: translateX(25px);
     -webkit-transform: translateX(25px);
     -ms-transform: translateX(25px);
 }
 
-
-.slider.round{
+.slider.round {
     border-radius: 34px;
 }
 
-.slider.round::before{
+.slider.round::before {
     border-radius: 50%;
 }
 
-.infos.config .text{
+.infos.config .text {
     position: absolute;
     left: 60px;
     top: 2px;
 }
 
-.tempo{
+.tempo {
     display: flex;
 }
 
-.tempo label{
+.tempo label {
     font-size: 14px;
     color: var(--color-black);
 }
 
-.tempo .form-group{
+.tempo .form-group {
     margin-right: 20px;
 }
 
-.tempo .form-group:last-child{
-    margin: 0;
+.tempo .form-group:last-child {
+    margin-right: 0px;
 }
 
-.tempo.disabled label{
+.tempo.disabled label {
     opacity: 0.65;
 }
 
-.tempo.disabled input{
-    background-color: #f5f5f5;
+.tempo.disabled input {
+    background-color: #f5f5f5!important;
 }
 
 .container-group.inline {
@@ -557,11 +557,35 @@ input:checked + .slider::before{
     margin-bottom: 0;
 }
 
-.form-sm{
+.form-sm {
     width: 150px;
 }
 
+/* tabela das taxas */
+.table {
+    font-size: 16px;
+}
 
+.table td {
+    color: var(--color-text);
+    vertical-align: middle;
+}
 
+.badge {
+    padding: 10px 15px;
+    border-radius: 50px;
+}
 
+.badge-success {
+    border: 1px solid var(--color-green);
+    color: var(--color-green);
+}
 
+.badge-danger {
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+}
+
+.color-red {
+    color: var(--color-red)!important;
+}
