@@ -1,14 +1,10 @@
-<!-- Define the document type and language -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Set character encoding and viewport for responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Set the title of the document -->
-    <title>Painel - Pizza Palece</title>
+    <title>Painel - Pizza Palace</title>
 
-    <!-- Link to external stylesheets for styling -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/fontawesome.css" />
     <link rel="stylesheet" href="../css/animate.css" />
@@ -16,49 +12,39 @@
     <link rel="stylesheet" href="./css/painel.css" />
 
 </head>
-
 <body>
 
-    <!-- Section with a background for the menu -->
     <section class="bg-menu">
 
-        <!-- Left part of the menu with logo and navigation links -->
         <div class="menu-left">
 
-            <!-- Logo of the application -->
             <div class="logo">
                 <img src="../img/logo.png" width="150" />
             </div>
 
-            <!-- Navigation links for different pages -->
             <div class="menus">
 
-                <!-- Home page link with an icon -->
                 <a href="./home.html" class="menu-item">
                     <i class="fas fa-home"></i> Início
                 </a>
 
-                <!-- Orders page link with an icon -->
                 <a href="./pedidos.html" class="menu-item">
                     <i class="fas fa-utensils"></i> Pedidos
                 </a>
 
-                <!-- Menu page link with an icon -->
                 <a href="./cardapio.html" class="menu-item">
                     <i class="fas fa-book-open"></i> Cardápio
                 </a>
 
-                <!-- Settings page link with an icon (active) -->
-                <a href="./configuraçoes.html" class="menu-item active">
+                <a href="./configuracoes.html" class="menu-item active">
                     <i class="fas fa-cog"></i> Configurações
                 </a>
 
-                <!-- Placeholder links with icons -->
-                <a href="#" class="menu-item">
+                <a href="./empresa.html" class="menu-item">
                     <i class="fas fa-building"></i> Empresa
                 </a>
 
-                <a href="#" class="menu-item">
+                <a href="./relatorio.html" class="menu-item">
                     <i class="fas fa-chart-line"></i> Relatório
                 </a>
 
@@ -66,32 +52,24 @@
 
         </div>
 
-        <!-- Right part of the menu with application information and user options -->
         <div class="conteudo">
 
-            <!-- Top part of the menu with application title and user information -->
             <div class="menu-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 d-flex align-items-center mt-4">
 
-                            <!-- Title of the current page with an icon -->
                             <h1 class="title-page">
                                 <b>
                                     <i class="fas fa-cog"></i>&nbsp; Configurações do Delivery
                                 </b>
                             </h1>
 
-                            <!-- Container for application information and logout button -->
                             <div class="container-right">
-
-                                <!-- Container for application name and email -->
                                 <div class="container-dados">
-                                    <p>Pizza Place</p>
-                                    <span>pizzapalace@contato.com</span>
+                                    <p>Pizzaria Maluca</p>
+                                    <span>pizzariamaluca@contato.com</span>
                                 </div>
-
-                                <!-- Logout button with an icon -->
                                 <a href="#" class="btn btn-white btn-sm">
                                     <i class="fas fa-sign-out-alt"></i>&nbsp; Sair
                                 </a>
@@ -102,46 +80,37 @@
                 </div>
             </div>
 
-
-            <!-- Inner content section containing configurations -->
             <div class="conteudo-inner">
                 <div class="container">
                     <div class="row">
 
-                        <!-- Configuration options for delivery, withdrawal, and payment -->
                         <div class="col-12">
+
                             <div class="menus-config">
-                                <!-- Button for delivery and withdrawal configuration -->
                                 <a href="#" class="btn btn-white btn-sm">
                                     <i class="fas fa-shopping-bag"></i> Delivery e retirada
                                 </a>
-                                <!-- Button for delivery fee configuration (active) -->
-                                <a href="#" class="btn btn-white btn-sm active">
+                                <a href="#" class="btn btn-white btn-sm">
                                     <i class="fas fa-motorcycle"></i> Taxa de entrega
                                 </a>
-                                <!-- Button for payment methods configuration -->
-                                <a href="#" class="btn btn-white btn-sm">
+                                <a href="#" class="btn btn-white btn-sm active">
                                     <i class="fas fa-coins"></i> Formas de pagamento
                                 </a>
                             </div>
+
                         </div>
 
-                        <!-- Delivery and withdrawal configuration section -->
                         <div class="col-12 mt-5 hidden" id="delivery-retirada">
 
-                            <!-- Title for the section -->
                             <p class="title-categoria mb-0">
                                 <b>Selecione as opções de entrega da sua loja</b>
                             </p>
 
-                            <!-- Configuration card for withdrawal -->
-                            <div class="container-group mb-3">
+                            <div class="container-group mb-3">                              
                                 <div class="card card-address cursor-default mt-3">
-                                    <!-- Icon for withdrawal -->
                                     <div class="img-icon-details">
                                         <i class="fas fa-box"></i>
                                     </div>
-                                    <!-- Information and switch for withdrawal configuration -->
                                     <div class="infos config">
                                         <p class="name mb-1"><b>Retirada</b></p>
                                         <label class="switch">
@@ -150,32 +119,27 @@
                                             <span class="text mb-0">Desligado</span>
                                         </label>
                                     </div>
-                                    <!-- Additional configuration for withdrawal -->
                                     <div class="tempo disabled">
                                         <div class="form-group">
                                             <label><b>Tempo mínimo retirada (min)</b></label>
-                                            <input type="number" class="form-control" placeholder="20" disabled />
+                                            <input type="number" class="form-control" placeholder="20" disabled/>
                                         </div>
                                         <div class="form-group">
                                             <label><b>Tempo máximo retirada (min)</b></label>
-                                            <input type="number" class="form-control" placeholder="20" disabled />
+                                            <input type="number" class="form-control" placeholder="20" disabled/>
                                         </div>
                                     </div>
-                                    <!-- Save button for withdrawal configuration -->
                                     <a class="btn btn-yellow btn-sm ms-4 disabled">
                                         <i class="fas fa-check"></i>&nbsp; Salvar
                                     </a>
                                 </div>
                             </div>
 
-                            <!-- Configuration card for delivery -->
-                            <div class="container-group mb-3">
+                            <div class="container-group mb-3">                              
                                 <div class="card card-address cursor-default mt-3">
-                                    <!-- Icon for delivery -->
                                     <div class="img-icon-details">
                                         <i class="fas fa-motorcycle"></i>
                                     </div>
-                                    <!-- Information and switch for delivery configuration -->
                                     <div class="infos config">
                                         <p class="name mb-1"><b>Delivery</b></p>
                                         <label class="switch">
@@ -189,18 +153,14 @@
 
                         </div>
 
-                        <!-- Delivery fee configuration section -->
-                        <div class="col-12 mt-5" id="taxa-entrega">
+                        <div class="col-12 mt-5 hidden" id="taxa-entrega">
 
-                            <!-- Title for the section -->
                             <p class="title-categoria mb-0">
                                 <b>Selecione as opções de taxas de entrega</b>
                             </p>
 
-                            <!-- Group of cards for different delivery fee options -->
                             <div class="container-group inline mb-3">
 
-                                <!-- Card for 'No Fee' option -->
                                 <div class="card mt-3">
                                     <div class="group-select">
                                         <div class="checks">
@@ -213,7 +173,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Card for 'Flat Fee' option -->
                                 <div class="card mt-3">
                                     <div class="group-select">
                                         <div class="checks">
@@ -226,7 +185,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Card for 'Distance-based Fee' option -->
                                 <div class="card mt-3">
                                     <div class="group-select">
                                         <div class="checks">
@@ -239,9 +197,10 @@
                                     </div>
                                 </div>
 
+
+
                             </div>
 
-                            <!-- Container for the 'No Fee' option details -->
                             <div class="container-group mb-3 hidden" id="container-sem-taxa">
                                 <div class="card card-address cursor-default mt-4">
                                     <div class="infos">
@@ -250,80 +209,69 @@
                                 </div>
                             </div>
 
-                            <!-- Container for the 'Flat Fee' option details -->
                             <div class="container-group mb-3 hidden" id="container-taxa-unica">
-
-                                <!-- Card for configuring flat delivery fee -->
                                 <div class="card card-address cursor-default mt-4 pb-4 justify-content-start">
-                                    <!-- Configuration details for flat fee -->
+
                                     <div class="tempo">
                                         <div class="form-group form-sm">
                                             <label><b>Taxa (R$)</b></label>
-                                            <input type="text" class="form-control" placeholder="R$ 20,00">
+                                            <input type="text" class="form-control" placeholder="R$ 20,00" />
                                         </div>
                                         <div class="form-group me-3">
                                             <label><b>Tempo mínimo entrega (min)</b></label>
-                                            <input type="text" class="form-control" placeholder="30">
+                                            <input type="text" class="form-control" placeholder="30" />
                                         </div>
                                         <div class="form-group">
                                             <label><b>Tempo máximo entrega (min)</b></label>
-                                            <input type="text" class="form-control" placeholder="60">
+                                            <input type="text" class="form-control" placeholder="60" />
                                         </div>
                                     </div>
-                                    <!-- Save button for flat fee configuration -->
                                     <a class="btn btn-yellow btn-sm ms-4">
-                                        <i class="fas fa-check"></i>&ensp; Salvar Alterações
+                                        <i class="fas fa-check"></i>&nbsp; Salvar Alterações
                                     </a>
-                                </div>
 
+                                </div>
                             </div>
 
-
-                            <!-- Container for distance-based delivery fee configuration -->
                             <div class="container-group mb-3" id="container-taxa-distancia">
 
-                                <!-- Card for configuring distance-based delivery fee -->
                                 <div class="card card-address cursor-default mt-4 pb-4 ps-4 justify-content-start">
 
-                                    <!-- Configuration details for distance-based fee -->
                                     <div class="tempo">
                                         <div class="form-group form-sm">
-                                            <label><b>Distância (Km)</b></label>
-                                            <input type="text" class="form-control" placeholder="5">
+                                            <label><b>Distância (km)</b></label>
+                                            <input type="text" class="form-control" placeholder="5" />
                                         </div>
                                         <div class="form-group form-sm">
                                             <label><b>Taxa (R$)</b></label>
-                                            <input type="text" class="form-control" placeholder="R$ 20,00">
+                                            <input type="text" class="form-control" placeholder="R$ 20,00" />
                                         </div>
                                         <div class="form-group me-3">
                                             <label><b>Tempo mínimo entrega (min)</b></label>
-                                            <input type="text" class="form-control" placeholder="30">
+                                            <input type="text" class="form-control" placeholder="30" />
                                         </div>
                                         <div class="form-group">
                                             <label><b>Tempo máximo entrega (min)</b></label>
-                                            <input type="text" class="form-control" placeholder="60">
+                                            <input type="text" class="form-control" placeholder="60" />
                                         </div>
                                     </div>
 
-                                    <!-- Button to add distance-based fee configuration -->
                                     <a class="btn btn-yellow btn-sm ms-4">
-                                        <i class="fas fa-plus"></i>&ensp; Adicionar
+                                        <i class="fas fa-plus"></i>&nbsp; Adicionar
                                     </a>
+
                                 </div>
 
-                                <!-- Title for the list of registered fees -->
                                 <p class="title-categoria mb-0 mt-5">
-                                    <b>Listas das taxas cadastradas:</b>
+                                    <b>Lista das taxas cadastradas:</b>
                                 </p>
 
-                                <!-- Card for displaying the list of fees -->
                                 <div class="card mt-3">
 
-                                    <!-- Table for displaying the list of fees -->
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
-                                                <th><b>Distância (Km)</b></th>
+                                                <th><b>Distância (km)</b></th>
                                                 <th><b>Taxa (R$)</b></th>
                                                 <th><b>Tempo de entrega (min)</b></th>
                                                 <th><b>Status</b></th>
@@ -331,81 +279,154 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <!-- Sample row in the table -->
                                             <tr>
                                                 <td>Até 5km</td>
                                                 <td>R$ 5,00</td>
                                                 <td>de 60 a 90 min</td>
                                                 <td>
-                                                    <span class="badge bg-success">Ativado</span>
+                                                    <span class="badge badge-success">Ativado</span>
                                                 </td>
                                                 <td>
-                                                    <!-- Dropdown menu for actions on the fee -->
                                                     <div class="dropdown">
-                                                        <button class="btn btn-white btn-sm" type="button"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <button class="btn btn-white btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="fas fa-ellipsis-v"></i>
                                                         </button>
-                                                        <!-- Dropdown items for activating and removing the fee -->
                                                         <div class="dropdown-menu">
                                                             <a class="dropdown-item" href="#">
                                                                 <i class="fas fa-check"></i>&nbsp; <b>Ativar</b>
                                                             </a>
-                                                            <a class="dropdown-item" href="#">
+                                                            <a class="dropdown-item color-red" href="#">
                                                                 <i class="fas fa-trash-alt"></i>&nbsp; <b>Remover</b>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
-
-                                            <!-- Another sample row in the table -->
                                             <tr>
                                                 <td>Até 5km</td>
                                                 <td>R$ 5,00</td>
                                                 <td>de 60 a 90 min</td>
                                                 <td>
-                                                    <span class="badge bg-danger">Desativado</span>
+                                                    <span class="badge badge-danger">Desativado</span>
                                                 </td>
                                                 <td>
-                                                    <!-- Dropdown menu for actions on the fee -->
                                                     <div class="dropdown">
-                                                        <button class="btn btn-white btn-sm" type="button"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <button class="btn btn-white btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             <i class="fas fa-ellipsis-v"></i>
                                                         </button>
-                                                        <!-- Dropdown items for activating and removing the fee -->
                                                         <div class="dropdown-menu">
                                                             <a class="dropdown-item" href="#">
                                                                 <i class="fas fa-check"></i>&nbsp; <b>Ativar</b>
                                                             </a>
-                                                            <a class="dropdown-item" href="#">
+                                                            <a class="dropdown-item color-red" href="#">
                                                                 <i class="fas fa-trash-alt"></i>&nbsp; <b>Remover</b>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <!-- Additional rows can be added here based on actual data -->
                                         </tbody>
                                     </table>
-                                </div>
-                            </div>
-                            <!-- End of container for distance-based delivery fee configuration -->
 
-                            <!-- Container for payment method configuration (currently empty) -->
-                            <div class="col-12 mt-5 hidden" id="forma-pagamento">
-                                <!-- This section can be filled with the relevant content for payment method configuration -->
+                                </div>
+
                             </div>
 
                         </div>
+
+                        <div class="col-12 mt-5" id="forma-pagamento">
+
+                            <p class="title-categoria mb-0">
+                                <b>Selecione as formas de <b class="color-primary">pagamento na entrega</b></b>
+                            </p>
+
+                            <div class="container-group mb-3">
+                                <div class="card card-address cursor-default mt-3">
+                                    <div class="img-icon-details">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                    <div class="infos">
+                                        <p class="name mb-1"><b>Pix</b></p>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="container-group mb-3">
+                                <div class="card card-address cursor-default mt-3">
+                                    <div class="img-icon-details">
+                                        <i class="fas fa-coins"></i>
+                                    </div>
+                                    <div class="infos">
+                                        <p class="name mb-1"><b>Dinheiro</b></p>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="container-group mb-3">
+                                <div class="card card-address cursor-default mt-3">
+                                    <div class="img-icon-details">
+                                        <i class="fas fa-credit-card"></i>
+                                    </div>
+                                    <div class="infos">
+                                        <p class="name mb-1"><b>Cartão de Crédito</b></p>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="container-group mb-3">
+                                <div class="card card-address cursor-default mt-3">
+                                    <div class="img-icon-details">
+                                        <i class="fas fa-credit-card"></i>
+                                    </div>
+                                    <div class="infos">
+                                        <p class="name mb-1"><b>Cartão de Débito</b></p>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" />
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <p class="title-categoria mb-0 mt-5">
+                                <b>Formas de <b class="color-primary">pagamento via aplicativo</b></b>
+                            </p>
+
+                            <div class="container-group mb-3 opacity-05">
+                                <div class="card card-address cursor-default mt-3">
+                                    <div class="img-icon-details">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div class="infos">
+                                        <p class="name mb-1"><b>Em construção...</b></p>
+                                        <span class="text mb-0">Esta função será liberada em breve.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                       
                     </div>
-                </div>
+                </div>       
             </div>
+
+        </div>
+
     </section>
 
-    <!-- Include Bootstrap JS library -->
     <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
-</body>
 
+</body>
 </html>
